@@ -3,8 +3,8 @@ A REST API for managing professionals and their contacts.
 
 
 
-# Description
-This API allows you to register, edit, list and delete professionals and their respective contacts. Ideal for CRM systems or team management.
+## Description
+This API is designed for managing professionals and their contacts, making it a great foundation for CRM platforms, HR systems, or internal team directories.This API allows you to register, edit, list and delete professionals and their respective contacts. Ideal for CRM systems or team management.
 
 
 
@@ -55,19 +55,19 @@ spring.jpa.hibernate.ddl-auto=update
 ### Available Endpoints
 
 
-### Profissionais
-- `GET /profissionais` - Lista todos os profissionais
-- `GET /profissionais/{id}` - Busca um profissional por ID
-- `POST /profissionais` - Cria um novo profissional
-- `PUT /profissionais/{id}` - Atualiza um profissional
-- `DELETE /profissionais/{id}` - Remove um profissional
+### Professionals
+- `GET /profissionais` - Lists all professionals
+- `GET /profissionais/{id}` - Searches for a professional by ID
+- `POST /profissionais` - Creates a new professional
+- `PUT /profissionais/{id}` - Updates a professional
+- `DELETE /profissionais/{id}` - Removes a professional
 
-### Contatos
-- `GET /contatos` - Lista todos os contatos
-- `GET /contatos/{id}` - Busca um contato por ID
-- `POST /contatos` - Cria um novo contato
-- `PUT /contatos/{id}` - Atualiza um contato
-- `DELETE /contatos/{id}` - Remove um contato
+### Contacts
+- `GET /contatos` - Lists all contacts
+- `GET /contatos/{id}` - Searches for a contact by ID
+- `POST /contatos` - Creates a new contact
+- `PUT /contatos/{id}` - Updates a contact
+- `DELETE /contatos/{id}` - Removes a contact
 
 
 ### Request Example
@@ -80,11 +80,11 @@ spring.jpa.hibernate.ddl-auto=update
   "nome": "Brayan Miguel Favarin",
   "cargo": "Estagiario",
   "nascimento": "2004-11-17",
-  "created_date": "2025-04-10"
+  "created_date": "2025-04-10",
   "contatos": [
     {
       "nome": "celular",
-      "contato": "88 88888-8888"
+      "contato": "88 88888-8888",
       "created_date": "2025-04-10",
       "profissional_id": 1
     },
