@@ -37,12 +37,6 @@ public class ProfissionalController {
         return ResponseEntity.status(HttpStatus.CREATED).body(profissionalSalvo);
     }    
 
-    /*@GetMapping
-    public ResponseEntity<List<ProfissionalResponseDTO>> listarTodos() {
-        return ResponseEntity.ok(profissionalService.listarTodos());
-    }
-    */
-
     @GetMapping
     public ResponseEntity<?> listarProfissionais(
         @RequestParam(required = false) String q,
